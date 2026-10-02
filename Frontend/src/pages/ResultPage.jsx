@@ -11,7 +11,7 @@ export default function ResultPage() {
   const [submission, setSubmission] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
-
+ 
   useEffect(() => {
     async function loadSubmission() {
       try {

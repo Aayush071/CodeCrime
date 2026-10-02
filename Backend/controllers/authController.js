@@ -19,7 +19,7 @@ export const register=async(req,res)=>{
     }
 
     // Create user with Supabase Auth
-    const {data: authData, error: authError } = await supabase.auth.signUp({
+    const {data: authData,error: authError}=await supabase.auth.signUp({
       email,
       password,
       options: {
